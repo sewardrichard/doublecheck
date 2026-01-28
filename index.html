@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>DoubleCheck - Dual Attendance Automation</title>
+    <meta name="description" content="One click. Two forms. Zero friction. Automate your daily attendance tracking across Project Y and Capaciti.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Configuration & Scripts -->
+    <script src="config.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">
+                <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="url(#gradient)"/>
+                    <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0" y1="0" x2="40" y2="40">
+                            <stop offset="0%" stop-color="#667eea"/>
+                            <stop offset="100%" stop-color="#764ba2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <h1 class="logo-text">DoubleCheck</h1>
+            </div>
+            <p class="tagline">One click. Two forms. Zero friction.</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Feature Cards -->
+            <div class="feature-cards">
+                <div class="card">
+                    <div class="card-icon">📋</div>
+                    <h3 class="card-title">Project Y</h3>
+                    <p class="card-description">Airtable attendance form</p>
+                    <div class="card-badge">Ready</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">📝</div>
+                    <h3 class="card-title">Capaciti</h3>
+                    <p class="card-description">Microsoft Forms attendance</p>
+                    <div class="card-badge">Ready</div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta-section">
+                <button id="launchButton" class="launch-button" onclick="launchForms()">
+                    <svg class="button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 3V17M10 3L6 7M10 3L14 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Mark Attendance
+                </button>
+                <p class="cta-description">Opens both forms and autofills your information</p>
+            </div>
+
+            <!-- How It Works -->
+            <section class="how-it-works">
+                <h2 class="section-title">How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Click Button</h3>
+                            <p>Press "Mark Attendance" to open both forms</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Auto-Fill</h3>
+                            <p>Forms are automatically filled with your information</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Review & Submit</h3>
+                            <p>Check the data and click Submit on each form</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Privacy Section -->
+            <section class="privacy-section">
+                <div class="privacy-icon">🔒</div>
+                <h2 class="section-title">Privacy First</h2>
+                <div class="privacy-features">
+                    <div class="privacy-item">
+                        <svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 8L6 11L13 4" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>All processing happens in your browser</span>
+                    </div>
+                    <div class="privacy-item">
+                        <svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 8L6 11L13 4" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>No data sent to external servers</span>
+                    </div>
+                    <div class="privacy-item">
+                        <svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 8L6 11L13 4" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>No tracking or analytics</span>
+                    </div>
+                    <div class="privacy-item">
+                        <svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 8L6 11L13 4" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Open source - inspect the code yourself</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built for Project Y x Capaciti</p>
+            <p class="footer-tip">💡 Tip: Bookmark this page for quick daily access</p>
+        </footer>
+    </div>
+
+    <!-- Notification Toast (for feedback) -->
+    <div id="toast" class="toast hidden">
+        <span id="toastMessage"></span>
+    </div>
+</body>
+</html>
