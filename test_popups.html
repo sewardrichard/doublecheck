@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test Pop-ups</title>
+</head>
+
+<body>
+    <h1>Test Pop-up Blocker</h1>
+    <button onclick="testPopups()">Test Opening Both Forms</button>
+    <div id="output"></div>
+
+    <script src="config.js"></script>
+    <script>
+        function testPopups() {
+            const output = document.getElementById('output');
+            output.innerHTML = '<p>Opening Airtable...</p>';
+
+            const tab1 = window.open(FORM_URLS.projectY, '_blank');
+            output.innerHTML += `<p>Airtable tab: ${tab1 ? 'OPENED ✅' : 'BLOCKED ❌'}</p>`;
+
+            output.innerHTML += '<p>Opening Microsoft Forms...</p>';
+            const tab2 = window.open(FORM_URLS.capaciti, '_blank');
+            output.innerHTML += `<p>Microsoft Forms tab: ${tab2 ? 'OPENED ✅' : 'BLOCKED ❌'}</p>`;
+
+            if (!tab1 || !tab2) {
+                output.innerHTML += '<p style="color: red;">⚠️ Pop-up blocker detected! Please allow pop-ups for this site.</p>';
+            }
+        }
+    </script>
+</body>
+
+</html>
