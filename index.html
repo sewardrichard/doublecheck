@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>DoubleCheck - Dual Attendance Automation</title>
+    <meta name="description"
+        content="One click. Two forms. Zero friction. Automate your daily attendance tracking across Project Y and Capaciti.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Configuration & Scripts -->
+    <script src="config.js"></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">
+                <h1 class="logo-text">DOUBLECHECK v1.0</h1>
+            </div>
+            <p class="tagline">One click. Two forms. Zero friction.</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Feature Cards -->
+            <div class="feature-cards">
+                <div class="card">
+                    <div class="card-icon">FORM_01</div>
+                    <h3 class="card-title">PROJECT Y</h3>
+                    <p class="card-description">Airtable attendance form</p>
+                    <div class="card-badge">READY</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">FORM_02</div>
+                    <h3 class="card-title">CAPACITI</h3>
+                    <p class="card-description">Microsoft Forms attendance</p>
+                    <div class="card-badge">READY</div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta-section">
+                <button id="launchButton" class="launch-button" onclick="launchForms()">
+                    MARK ATTENDANCE
+                </button>
+                <p class="cta-description">Opens both forms and autofills your information</p>
+            </div>
+
+            <!-- How It Works -->
+            <section class="how-it-works">
+                <h2 class="section-title">EXECUTION PROTOCOL</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>CLICK BUTTON</h3>
+                            <p>Press "Mark Attendance" to open both forms</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>AUTO-FILL</h3>
+                            <p>Forms are automatically filled with your information</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>REVIEW & SUBMIT</h3>
+                            <p>Check the data and click Submit on each form</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Privacy Section -->
+            <section class="privacy-section">
+                <div class="privacy-icon">[SECURE]</div>
+                <h2 class="section-title">SECURITY PROTOCOL</h2>
+                <div class="privacy-features">
+                    <div class="privacy-item">
+                        <span>All processing happens in your browser</span>
+                    </div>
+                    <div class="privacy-item">
+                        <span>No data sent to external servers</span>
+                    </div>
+                    <div class="privacy-item">
+                        <span>No tracking or analytics</span>
+                    </div>
+                    <div class="privacy-item">
+                        <span>Open source - inspect the code yourself</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built for Project Y x Capaciti</p>
+            <p class="footer-tip">Tip: Bookmark this page for quick daily access</p>
+        </footer>
+    </div>
+
+    <!-- Notification Toast (for feedback) -->
+    <div id="toast" class="toast hidden">
+        <span id="toastMessage"></span>
+    </div>
+</body>
+
+</html>
